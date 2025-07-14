@@ -1,139 +1,68 @@
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5ff; color: #333; }
+header { background-color: #6a0dad; color: white; padding: 20px; text-align: center; }
+.logo { width: 280px; vertical-align: middle; }
+nav ul { list-style-type: none; padding: 0; margin: 10px 0 0 0; }
+nav ul li { display: inline; margin: 0 15px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+.tagline { font-style: italic; font-size: 1.1em; }
+main { padding: 20px; }
+section { margin-bottom: 40px; }
+footer { background-color: #4b0082; color: white; text-align: center; padding: 10px 0; }
+.cover-section {
+  background-image: url('2025-03-14.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: white;
 }
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-header {
-  background: #003366;
-  color: #fff;
-  padding: 20px 0;
-}
-.logo {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0;
-}
-nav ul li {
-  margin: 10px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-nav ul li a:hover {
-  color: #ffcc00;
-}
-.hero {
-  background: url('img/hero.jpg') no-repeat center center/cover;
-  height: 90vh;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+}
+.cover-text {
   text-align: center;
 }
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 10px;
+.cover-text h1 {
+  font-size: 3rem;
+  margin: 0;
 }
-.btn-primary, .btn-secondary {
-  background-color: #003366;
-  color: #fff;
-  padding: 10px 25px;
-  margin-top: 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.btn-primary:hover, .btn-secondary:hover {
-  background-color: #00509e;
-}
-.info-section {
-  padding: 60px 20px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-.info-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-  color: #003366;
-}
-.info-section ul {
-  list-style: disc;
-  padding-left: 40px;
-  max-width: 800px;
-  margin: auto;
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  padding: 0 20px;
-}
-.gallery-grid img {
-  width: 100%;
-  border-radius: 10px;
-}
-.testimonial {
-  max-width: 700px;
-  margin: 20px auto;
-  background: #eee;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-.contact-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-}
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: auto;
-}
-#contact-form input, #contact-form textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-#contact-form button {
-  background-color: #003366;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-#contact-form button:hover {
-  background-color: #00509e;
-}
-footer {
-  background: #003366;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-footer a.btn-secondary {
+.cover-text p {
+  font-size: 1.5rem;
   margin-top: 10px;
-  display: inline-block;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.school-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.school-title h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.school-title .tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #f0e6ff;
+  margin-top: 5px;
 }
